@@ -1,0 +1,9 @@
+C:\work\StaffProAPI20\staffpro.domain\bin\Debug\netcoreapp2.0\staffpro.entity.dll
+C:\work\StaffProAPI20\staffpro.domain\bin\Debug\netcoreapp2.0\staffPro.Repository.dll
+C:\work\StaffProAPI20\staffpro.domain\bin\Debug\netcoreapp2.0\StaffProAPI20.dll
+C:\work\StaffProAPI20\staffpro.domain\bin\Debug\netcoreapp2.0\staffpro.entity.pdb
+C:\work\StaffProAPI20\staffpro.domain\bin\Debug\netcoreapp2.0\staffPro.Repository.pdb
+C:\work\StaffProAPI20\staffpro.domain\obj\Debug\netcoreapp2.0\staffpro.Domain.csprojAssemblyReference.cache
+C:\work\StaffProAPI20\staffpro.domain\obj\Debug\netcoreapp2.0\staffpro.Domain.csproj.CoreCompileInputs.cache
+C:\work\StaffProAPI20\staffpro.domain\obj\Debug\netcoreapp2.0\staffpro.Domain.AssemblyInfoInputs.cache
+C:\work\StaffProAPI20\staffpro.domain\obj\Debug\netcoreapp2.0\staffpro.Domain.AssemblyInfo.cs
