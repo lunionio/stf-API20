@@ -9,3 +9,10 @@ C:\work\StaffProAPI20\StaffProAPI20\obj\Debug\netcoreapp2.0\StaffProAPI20.Assemb
 C:\work\StaffProAPI20\StaffProAPI20\obj\Debug\netcoreapp2.0\StaffProAPI20.AssemblyInfo.cs
 C:\work\StaffProAPI20\StaffProAPI20\obj\Debug\netcoreapp2.0\StaffProAPI20.dll
 C:\work\StaffProAPI20\StaffProAPI20\obj\Debug\netcoreapp2.0\StaffProAPI20.pdb
+C:\work\staffproapi20\StaffProAPI20\bin\Debug\netcoreapp2.0\staffpro.Domain.dll
+C:\work\staffproapi20\StaffProAPI20\bin\Debug\netcoreapp2.0\staffpro.entity.dll
+C:\work\staffproapi20\StaffProAPI20\bin\Debug\netcoreapp2.0\staffPro.Repository.dll
+C:\work\staffproapi20\StaffProAPI20\bin\Debug\netcoreapp2.0\staffpro.entity.pdb
+C:\work\staffproapi20\StaffProAPI20\bin\Debug\netcoreapp2.0\staffpro.Domain.pdb
+C:\work\staffproapi20\StaffProAPI20\bin\Debug\netcoreapp2.0\staffPro.Repository.pdb
+C:\work\staffproapi20\StaffProAPI20\obj\Debug\netcoreapp2.0\StaffProAPI20.csproj.CopyComplete

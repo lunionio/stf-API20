@@ -3439,11 +3439,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\work\\staffproapi20\\staffPro.repositrio\\staffPro.Repository.csproj",
+      "projectUniqueName": "C:\\work\\StaffProAPI20\\staffPro.repositrio\\staffPro.Repository.csproj",
       "projectName": "staffPro.Repository",
-      "projectPath": "C:\\work\\staffproapi20\\staffPro.repositrio\\staffPro.Repository.csproj",
+      "projectPath": "C:\\work\\StaffProAPI20\\staffPro.repositrio\\staffPro.Repository.csproj",
       "packagesPath": "C:\\Users\\Matheus Ferreira\\.nuget\\packages\\",
-      "outputPath": "C:\\work\\staffproapi20\\staffPro.repositrio\\obj\\",
+      "outputPath": "C:\\work\\StaffProAPI20\\staffPro.repositrio\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3462,8 +3462,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\work\\staffproapi20\\staffpro.entidades\\staffpro.entity.csproj": {
-              "projectPath": "C:\\work\\staffproapi20\\staffpro.entidades\\staffpro.entity.csproj"
+            "C:\\work\\StaffProAPI20\\staffpro.entidades\\staffpro.entity.csproj": {
+              "projectPath": "C:\\work\\StaffProAPI20\\staffpro.entidades\\staffpro.entity.csproj"
             }
           }
         }
