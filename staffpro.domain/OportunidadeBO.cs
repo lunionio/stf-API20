@@ -2,22 +2,23 @@
 using staffPro.repository;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace staffpro.Domain
 {
     public class OportunidadeBO
     {
-        public bool Save(Oportunidade evento)
+        public bool Save(Oportunidade oportunidade)
         {
-            if(evento.ID == null)
+            if(oportunidade.ID == 0)
             {
-                EventoRep rep = new EventoRep();
-                evento.DataCriacao = DateTime.Now;
-                evento.DataEdicao = DateTime.Now;
-                evento.Ativo = true;
+                OportunidadeRep rep = new OportunidadeRep();
+                oportunidade.DataCriacao = DateTime.Now;
+                oportunidade.DataEdicao = DateTime.Now;
+                oportunidade.Ativo = true;
                 try
                 {
-                    rep.Add(evento);
+                    rep.Add(oportunidade);
                     return true;
                 }
                 catch(Exception e)
@@ -28,11 +29,11 @@ namespace staffpro.Domain
             }
             else
             {
-                EventoRep rep = new EventoRep();
-                evento.DataEdicao = DateTime.Now;
+                OportunidadeRep rep = new OportunidadeRep();
+                oportunidade.DataEdicao = DateTime.Now;
                 try
                 {
-                    rep.Update(evento);
+                    rep.Update(oportunidade);
                     return true;
                 }
                 catch (Exception e)
@@ -44,8 +45,23 @@ namespace staffpro.Domain
         }
         public IList<Oportunidade> GetList()
         {
-            EventoRep rep = new EventoRep();
-            return rep.GetAll();
+            OportunidadeRep rep = new OportunidadeRep();
+            //9 é deletado
+            return rep.GetAll().Where(x => x.Status == 9).ToList();
         }
+        public bool Remove(Oportunidade oportunidade)
+        {
+            oportunidade.Status = 9;
+            Save(oportunidade);
+            throw new NotImplementedException();
+        }
+        public IList<Oportunidade> GetListByCliente(int idCliente)
+        {
+
+            OportunidadeRep oportunidade = new OportunidadeRep();
+            return oportunidade.GetAll().Where(x => x.UsuarioCriacao == idCliente).ToList();
+
+        }
+
     }
 }

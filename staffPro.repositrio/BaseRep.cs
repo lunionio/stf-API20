@@ -37,7 +37,6 @@ namespace staffPro.repository
 
 
             list = dbQuery
-                .AsNoTracking()
                 .ToList<T>();
 
             return list;
