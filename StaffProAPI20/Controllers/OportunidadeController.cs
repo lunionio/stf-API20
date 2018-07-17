@@ -8,31 +8,31 @@ using System;
 namespace StaffProAPI20.Controllers
 {
     [Produces("application/json")]
-    [Route("api/Oportunidade/[Action]")]
+    [Route("api/[controller]/[action]")]
     public class OportunidadeController : Controller
     {
-        // GET: api/Oportunidade
+      
         [HttpGet]
         public IList<Oportunidade> GetAll()
         {
             return new OportunidadeBO().GetList();
         }
 
-        // GET: api/Oportunidade/5
-        [HttpGet("{id}", Name = "Get")]
+       
+        [HttpGet("{id}", Name = "GetAllByCliente")]
         public IList<Oportunidade> GetAllByCliente(int idCliente)
         {
             return new OportunidadeBO().GetListByCliente(idCliente);
         }
-        // GET: api/Oportunidade/5
-        [HttpGet("{id}", Name = "Get")]
+      
+        [HttpGet("{id}", Name = "GetAllByID")]
         public Oportunidade GetAllByID(int id)
         {
             OportunidadeBO oportunidade = new OportunidadeBO();
             return oportunidade.GetList().Where(x => x.ID == id).FirstOrDefault();
         }
 
-        // POST: api/Oportunidade
+       
         [HttpPost]
         public string Save([FromBody]Oportunidade obj)
         {
