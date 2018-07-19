@@ -35,12 +35,13 @@ namespace Domain.test
                 UsuarioCriacao = 1,
                 UsuarioEdicao = 1,
                 Valor = 200.00m,
-                ID = 0
+                ID = 0,
+                TipoServico = 1
             };
             try
             {
                 OportunidadeBO oportunidadeBO = new OportunidadeBO();
-                oportunidadeBO.Save(op);
+                 oportunidadeBO.Save(op,21);
             }
             catch (Exception E)
             {
@@ -61,10 +62,23 @@ namespace Domain.test
 
             a.Nome = "Evento 2";
 
-            op.Save(a);
+           // op.Save(a);
 
             
         }
+        [TestMethod]
+        public async System.Threading.Tasks.Task GetServicoGroupAsync()
+        {
+            ServiceGroupsBO servicesGroup = new ServiceGroupsBO();
+            var retorno = await servicesGroup.GetAllActivate();
+
+            ServicesBO services = new ServicesBO();
+
+            var servicesRet = await services.GetAllActivateByGroup(retorno[5].ServiceGroupId);
+
+
+        }
+
 
     }
 }

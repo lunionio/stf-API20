@@ -4,6 +4,7 @@ namespace staffpro.entity
     public class Oportunidade : Base
     {
         public int TipoProfissional { get; set; }
+        public int TipoServico { get; set; }
         public DateTime DataOportunidade { get; set; }
         public TimeSpan HoraInicio { get; set; }
         public TimeSpan HoraFim { get; set; }

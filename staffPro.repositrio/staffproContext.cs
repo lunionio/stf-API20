@@ -5,7 +5,8 @@ namespace staffPro.repository
     public class staffproContext : DbContext
     {
         public DbSet<Oportunidade> Oportunidade { get; set; }
-
+        public DbSet<ServiceGroups> ServiceGroups { get; set; }
+        public DbSet<Services> Services { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

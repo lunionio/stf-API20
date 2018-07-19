@@ -476,6 +476,9 @@
         }
       },
       "staffpro.entity/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "2.1.1"
+        },
         "runtime": {
           "staffpro.entity.dll": {}
         }

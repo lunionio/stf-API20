@@ -3,12 +3,15 @@ using staffpro.Domain;
 using Microsoft.AspNetCore.Mvc;
 using staffpro.entity;
 using System.Linq;
+using System.Threading.Tasks;
 using System;
+using Microsoft.AspNetCore.Cors;
 
 namespace StaffProAPI20.Controllers
 {
     [Produces("application/json")]
     [Route("api/[controller]/[action]")]
+    [EnableCors("AllowAll")]
     public class OportunidadeController : Controller
     {
       
@@ -17,12 +20,12 @@ namespace StaffProAPI20.Controllers
         {
             return new OportunidadeBO().GetList();
         }
-
        
-        [HttpGet("{id}", Name = "GetAllByCliente")]
-        public IList<Oportunidade> GetAllByCliente(int idCliente)
+        [HttpGet("{idCliente}", Name = "GetAllByCliente")]
+        public async Task<IList<Oportunidade>> GetAllByClienteAsync(int idCliente)
         {
-            return new OportunidadeBO().GetListByCliente(idCliente);
+            OportunidadeBO oportunidade = new OportunidadeBO();
+            return await oportunidade.GetListByClienteAsync(idCliente);
         }
       
         [HttpGet("{id}", Name = "GetAllByID")]
@@ -32,14 +35,13 @@ namespace StaffProAPI20.Controllers
             return oportunidade.GetList().Where(x => x.ID == id).FirstOrDefault();
         }
 
-       
-        [HttpPost]
-        public string Save([FromBody]Oportunidade obj)
+        [HttpPost("{idCliente}")]
+        public string Save([FromBody]Oportunidade obj,int idCliente)
         {
             OportunidadeBO oportunidade = new OportunidadeBO();
             try
             {
-                oportunidade.Save(obj);
+                oportunidade.Save(obj,idCliente);
                 return "Oportunidade cadastrada com sucesso";
             }
             catch (Exception e)
@@ -56,7 +58,7 @@ namespace StaffProAPI20.Controllers
             {
                 //Status de remoção
                 obj.Status = 9;
-                oportunidade.Save(obj);
+                oportunidade.Save(obj,0);
                 return "Oportunidade removida com sucesso";
             }
             catch (Exception e)
@@ -65,4 +67,5 @@ namespace StaffProAPI20.Controllers
             }
         }
     }
+
 }

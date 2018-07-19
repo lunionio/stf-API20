@@ -12,7 +12,6 @@
   <ItemGroup>
     <ProjectReference Include="..\staffpro.entidades\staffpro.entity.csproj" />
     <ProjectReference Include="..\staffPro.repositrio\staffPro.Repository.csproj" />
-    <ProjectReference Include="..\StaffProAPI20\StaffProAPI20.csproj" />
   </ItemGroup>
 
 </Project>

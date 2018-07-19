@@ -3,14 +3,15 @@ using staffPro.repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace staffpro.Domain
 {
     public class OportunidadeBO
     {
-        public bool Save(Oportunidade oportunidade)
+        public bool Save(Oportunidade oportunidade, int idCliente)
         {
-            if(oportunidade.ID == 0)
+            if (oportunidade.ID == 0)
             {
                 OportunidadeRep rep = new OportunidadeRep();
                 oportunidade.DataCriacao = DateTime.Now;
@@ -19,9 +20,10 @@ namespace staffpro.Domain
                 try
                 {
                     rep.Add(oportunidade);
+                    rep.AddClient(oportunidade, idCliente);
                     return true;
                 }
-                catch(Exception e)
+                catch (Exception e)
                 {
                     ///:)
                     return false;
@@ -47,19 +49,19 @@ namespace staffpro.Domain
         {
             OportunidadeRep rep = new OportunidadeRep();
             //9 é deletado
-            return rep.GetAll().Where(x => x.Status == 9).ToList();
+            return rep.GetAll().Where(x => x.Status != 9).ToList();
         }
         public bool Remove(Oportunidade oportunidade)
         {
             oportunidade.Status = 9;
-            Save(oportunidade);
+            Save(oportunidade,0);
             throw new NotImplementedException();
         }
-        public IList<Oportunidade> GetListByCliente(int idCliente)
+        public async Task<IList<Oportunidade>> GetListByClienteAsync(int idCliente)
         {
 
             OportunidadeRep oportunidade = new OportunidadeRep();
-            return oportunidade.GetAll().Where(x => x.UsuarioCriacao == idCliente).ToList();
+            return await oportunidade.GetAllByClientAsync(idCliente);
 
         }
 

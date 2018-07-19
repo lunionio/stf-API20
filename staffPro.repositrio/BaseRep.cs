@@ -11,7 +11,7 @@ namespace staffPro.repository
         IList<T> GetAll();
         IList<T> GetList(Func<T, bool> where, params Expression<Func<T, object>>[] navigationProperties);
         T GetSingle(Func<T, bool> where, params Expression<Func<T, object>>[] navigationProperties);
-        void Add(params T[] items);
+        int Add(params T[] items);
         void Update(params T[] items);
         void Remove(params T[] items);
     }
@@ -96,15 +96,26 @@ namespace staffPro.repository
         /// Adiciona um item na base de dados 
         /// </summary>
         /// <param name="items">Baseado na classe operante</param>
-        public virtual void Add(params T[] items)
+        public virtual int Add(params T[] items)
         {
             var context = new staffproContext();
+            int id = 0;
             foreach (T item in items)
             {
                 context.Entry(item).State = EntityState.Added;
+                try
+                {
+                    dynamic idT = item;
+                    id = idT.ID;
+                }
+                catch
+                {
+                    //não tem id ??
+                }
             }
             context.SaveChanges();
 
+            return id;
         }
         /// <summary>
         /// Atualiza um item na base de dados 

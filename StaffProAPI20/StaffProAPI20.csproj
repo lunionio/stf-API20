@@ -18,13 +18,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\staffpro.domain\staffpro.Domain.csproj" />
     <ProjectReference Include="..\staffpro.entidades\staffpro.entity.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="staffpro.Domain">
-      <HintPath>..\staffpro.domain\bin\Debug\netcoreapp2.0\staffpro.Domain.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\staffPro.repositrio\staffPro.Repository.csproj" />
   </ItemGroup>
 
 </Project>
