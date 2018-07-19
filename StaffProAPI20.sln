@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Apresentacao", "1-Apresen
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Servico", "2-Servico", "{9D778422-BCEA-4487-A74A-7D10A075F43D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Domain", "3-Domain", "{FDB935FE-5196-4EEE-B330-E897C34C8CDD}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Dominio", "3-Dominio", "{FDB935FE-5196-4EEE-B330-E897C34C8CDD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Infraestrutura", "4-Infraestrutura", "{78BA7C2F-35B3-4ADC-B7BE-248DE0948A92}"
 EndProject
@@ -19,9 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "staffpro.entity", "staffpro
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "staffPro.Repository", "staffPro.repositrio\staffPro.Repository.csproj", "{439E3B21-81B3-4F8E-BCBC-61963A35D9F4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "staffpro.Domain", "staffpro.domain\staffpro.Domain.csproj", "{07D929F2-533A-46DE-9BE1-10812CC6D7A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "staffpro.Dominio", "staffpro.domain\staffpro.Dominio.csproj", "{07D929F2-533A-46DE-9BE1-10812CC6D7A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.test", "Domain.test\Domain.test.csproj", "{E846476A-CA44-4DD0-8001-A5790107AB5C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain.test", "Domain.test\Domain.test.csproj", "{E846476A-CA44-4DD0-8001-A5790107AB5C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

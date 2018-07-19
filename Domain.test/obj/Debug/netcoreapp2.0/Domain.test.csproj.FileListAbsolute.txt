@@ -9,13 +9,13 @@ C:\work\StaffProAPI20\Domain.test\bin\Debug\netcoreapp2.0\Domain.test.runtimecon
 C:\work\StaffProAPI20\Domain.test\bin\Debug\netcoreapp2.0\Domain.test.runtimeconfig.dev.json
 C:\work\StaffProAPI20\Domain.test\bin\Debug\netcoreapp2.0\Domain.test.dll
 C:\work\StaffProAPI20\Domain.test\bin\Debug\netcoreapp2.0\Domain.test.pdb
-C:\work\StaffProAPI20\Domain.test\bin\Debug\netcoreapp2.0\staffpro.Domain.dll
 C:\work\StaffProAPI20\Domain.test\bin\Debug\netcoreapp2.0\staffpro.entity.dll
 C:\work\StaffProAPI20\Domain.test\bin\Debug\netcoreapp2.0\staffPro.Repository.dll
-C:\work\StaffProAPI20\Domain.test\bin\Debug\netcoreapp2.0\staffpro.Domain.pdb
 C:\work\StaffProAPI20\Domain.test\bin\Debug\netcoreapp2.0\staffpro.entity.pdb
 C:\work\StaffProAPI20\Domain.test\bin\Debug\netcoreapp2.0\staffPro.Repository.pdb
 C:\work\StaffProAPI20\Domain.test\obj\Debug\netcoreapp2.0\Domain.test.csprojAssemblyReference.cache
 C:\work\StaffProAPI20\Domain.test\obj\Debug\netcoreapp2.0\Domain.test.csproj.CopyComplete
 C:\work\StaffProAPI20\Domain.test\obj\Debug\netcoreapp2.0\Domain.test.dll
 C:\work\StaffProAPI20\Domain.test\obj\Debug\netcoreapp2.0\Domain.test.pdb
+C:\work\StaffProAPI20\Domain.test\bin\Debug\netcoreapp2.0\staffpro.Dominio.dll
+C:\work\StaffProAPI20\Domain.test\bin\Debug\netcoreapp2.0\staffpro.Dominio.pdb

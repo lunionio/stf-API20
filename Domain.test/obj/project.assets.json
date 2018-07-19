@@ -2005,7 +2005,7 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
-      "staffpro.Domain/1.0.0": {
+      "staffpro.Dominio/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
@@ -2015,10 +2015,10 @@
           "staffpro.entity": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/staffpro.Domain.dll": {}
+          "bin/placeholder/staffpro.Dominio.dll": {}
         },
         "runtime": {
-          "bin/placeholder/staffpro.Domain.dll": {}
+          "bin/placeholder/staffpro.Dominio.dll": {}
         }
       },
       "staffpro.entity/1.0.0": {
@@ -6845,10 +6845,10 @@
         "system.xml.xpath.xmldocument.nuspec"
       ]
     },
-    "staffpro.Domain/1.0.0": {
+    "staffpro.Dominio/1.0.0": {
       "type": "project",
-      "path": "../staffpro.domain/staffpro.Domain.csproj",
-      "msbuildProject": "../staffpro.domain/staffpro.Domain.csproj"
+      "path": "../staffpro.domain/staffpro.Dominio.csproj",
+      "msbuildProject": "../staffpro.domain/staffpro.Dominio.csproj"
     },
     "staffpro.entity/1.0.0": {
       "type": "project",
@@ -6868,7 +6868,7 @@
       "Microsoft.NET.Test.Sdk >= 15.7.0",
       "Microsoft.NETCore.App >= 2.0.0",
       "staffPro.Repository >= 1.0.0",
-      "staffpro.Domain >= 1.0.0",
+      "staffpro.Dominio >= 1.0.0",
       "staffpro.entity >= 1.0.0"
     ]
   },
@@ -6902,8 +6902,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\work\\StaffProAPI20\\staffpro.domain\\staffpro.Domain.csproj": {
-              "projectPath": "C:\\work\\StaffProAPI20\\staffpro.domain\\staffpro.Domain.csproj"
+            "C:\\work\\StaffProAPI20\\staffpro.domain\\staffpro.Dominio.csproj": {
+              "projectPath": "C:\\work\\StaffProAPI20\\staffpro.domain\\staffpro.Dominio.csproj"
             },
             "C:\\work\\StaffProAPI20\\staffpro.entidades\\staffpro.entity.csproj": {
               "projectPath": "C:\\work\\StaffProAPI20\\staffpro.entidades\\staffpro.entity.csproj"

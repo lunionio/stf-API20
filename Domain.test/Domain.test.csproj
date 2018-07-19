@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\staffpro.domain\staffpro.Domain.csproj" />
+    <ProjectReference Include="..\staffpro.domain\staffpro.Dominio.csproj" />
     <ProjectReference Include="..\staffpro.entidades\staffpro.entity.csproj" />
     <ProjectReference Include="..\staffPro.repositrio\staffPro.Repository.csproj" />
   </ItemGroup>

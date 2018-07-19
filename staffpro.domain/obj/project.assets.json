@@ -3463,9 +3463,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\work\\StaffProAPI20\\staffpro.domain\\staffpro.Domain.csproj",
-      "projectName": "staffpro.Domain",
-      "projectPath": "C:\\work\\StaffProAPI20\\staffpro.domain\\staffpro.Domain.csproj",
+      "projectUniqueName": "C:\\work\\StaffProAPI20\\staffpro.domain\\staffpro.Dominio.csproj",
+      "projectName": "staffpro.Dominio",
+      "projectPath": "C:\\work\\StaffProAPI20\\staffpro.domain\\staffpro.Dominio.csproj",
       "packagesPath": "C:\\Users\\Matheus Ferreira\\.nuget\\packages\\",
       "outputPath": "C:\\work\\StaffProAPI20\\staffpro.domain\\obj\\",
       "projectStyle": "PackageReference",

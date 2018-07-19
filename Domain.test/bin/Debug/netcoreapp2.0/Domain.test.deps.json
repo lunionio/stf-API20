@@ -12,7 +12,7 @@
           "MSTest.TestFramework": "1.2.1",
           "Microsoft.NET.Test.Sdk": "15.7.0",
           "staffPro.Repository": "1.0.0",
-          "staffpro.Domain": "1.0.0",
+          "staffpro.Dominio": "1.0.0",
           "staffpro.entity": "1.0.0"
         },
         "runtime": {
@@ -1273,7 +1273,7 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
-      "staffpro.Domain/1.0.0": {
+      "staffpro.Dominio/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "2.1.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.1",
@@ -1281,7 +1281,7 @@
           "staffpro.entity": "1.0.0"
         },
         "runtime": {
-          "staffpro.Domain.dll": {}
+          "staffpro.Dominio.dll": {}
         }
       },
       "staffpro.entity/1.0.0": {
@@ -2024,7 +2024,7 @@
       "path": "system.xml.xpath.xmldocument/4.0.1",
       "hashPath": "system.xml.xpath.xmldocument.4.0.1.nupkg.sha512"
     },
-    "staffpro.Domain/1.0.0": {
+    "staffpro.Dominio/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
