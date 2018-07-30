@@ -2930,11 +2930,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\work\\StaffProAPI20\\staffpro.entidades\\staffpro.entity.csproj",
-      "projectName": "staffpro.entity",
-      "projectPath": "C:\\work\\StaffProAPI20\\staffpro.entidades\\staffpro.entity.csproj",
+      "projectUniqueName": "C:\\work\\staffproapi20\\staffpro.entidades\\staffpro.entidades.csproj",
+      "projectName": "staffpro.entidades",
+      "projectPath": "C:\\work\\staffproapi20\\staffpro.entidades\\staffpro.entidades.csproj",
       "packagesPath": "C:\\Users\\Matheus Ferreira\\.nuget\\packages\\",
-      "outputPath": "C:\\work\\StaffProAPI20\\staffpro.entidades\\obj\\",
+      "outputPath": "C:\\work\\staffproapi20\\staffpro.entidades\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -913,17 +913,17 @@
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
       },
-      "staffpro.entity/1.0.0": {
+      "staffpro.entidades/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "2.1.1"
         },
         "compile": {
-          "bin/placeholder/staffpro.entity.dll": {}
+          "bin/placeholder/staffpro.entidades.dll": {}
         },
         "runtime": {
-          "bin/placeholder/staffpro.entity.dll": {}
+          "bin/placeholder/staffpro.entidades.dll": {}
         }
       }
     }
@@ -3421,10 +3421,10 @@
         "system.threading.tasks.nuspec"
       ]
     },
-    "staffpro.entity/1.0.0": {
+    "staffpro.entidades/1.0.0": {
       "type": "project",
-      "path": "../staffpro.entidades/staffpro.entity.csproj",
-      "msbuildProject": "../staffpro.entidades/staffpro.entity.csproj"
+      "path": "../staffpro.entidades/staffpro.entidades.csproj",
+      "msbuildProject": "../staffpro.entidades/staffpro.entidades.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3432,7 +3432,7 @@
       "Microsoft.EntityFrameworkCore >= 2.1.1",
       "Microsoft.EntityFrameworkCore.SqlServer >= 2.1.1",
       "Microsoft.NETCore.App >= 2.0.0",
-      "staffpro.entity >= 1.0.0"
+      "staffpro.entidades >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3442,11 +3442,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\work\\StaffProAPI20\\staffPro.repositrio\\staffPro.Repository.csproj",
-      "projectName": "staffPro.Repository",
-      "projectPath": "C:\\work\\StaffProAPI20\\staffPro.repositrio\\staffPro.Repository.csproj",
+      "projectUniqueName": "C:\\work\\staffproapi20\\staffPro.repositrio\\staffPro.Repositorio.csproj",
+      "projectName": "staffPro.Repositorio",
+      "projectPath": "C:\\work\\staffproapi20\\staffPro.repositrio\\staffPro.Repositorio.csproj",
       "packagesPath": "C:\\Users\\Matheus Ferreira\\.nuget\\packages\\",
-      "outputPath": "C:\\work\\StaffProAPI20\\staffPro.repositrio\\obj\\",
+      "outputPath": "C:\\work\\staffproapi20\\staffPro.repositrio\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3465,8 +3465,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\work\\StaffProAPI20\\staffpro.entidades\\staffpro.entity.csproj": {
-              "projectPath": "C:\\work\\StaffProAPI20\\staffpro.entidades\\staffpro.entity.csproj"
+            "C:\\work\\staffproapi20\\staffpro.entidades\\staffpro.entidades.csproj": {
+              "projectPath": "C:\\work\\staffproapi20\\staffpro.entidades\\staffpro.entidades.csproj"
             }
           }
         }

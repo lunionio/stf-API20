@@ -6,6 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System;
 using Microsoft.AspNetCore.Cors;
+using staffpro.servico;
 
 namespace StaffProAPI20.Controllers
 {
@@ -14,34 +15,34 @@ namespace StaffProAPI20.Controllers
     [EnableCors("AllowAll")]
     public class OportunidadeController : Controller
     {
-      
-        [HttpGet]
-        public IList<Oportunidade> GetAll()
+
+        [HttpGet("{idCliente}/{token}")]
+        public async Task<IList<Oportunidade>> GetAllAsync(string token, int idCliente)
         {
-            return new OportunidadeBO().GetList();
+            return await OportunidadeBO.GetListAsync(idCliente, token);
         }
-       
-        [HttpGet("{idCliente}", Name = "GetAllByCliente")]
-        public async Task<IList<Oportunidade>> GetAllByClienteAsync(int idCliente)
+
+        [HttpGet("{idUsuarioCriacao}/{idCliente}/{token}", Name = "GetAllByCliente")]
+        public async Task<List<Oportunidade>> GetAllByClienteAsync(int idUsuarioCriacao, int idCliente, string token)
         {
-            OportunidadeBO oportunidade = new OportunidadeBO();
-            return await oportunidade.GetListByClienteAsync(idCliente);
+            return await OportunidadeBO.GetListByClienteAsync(idUsuarioCriacao, idCliente, token);
         }
-      
+
         [HttpGet("{id}", Name = "GetAllByID")]
         public Oportunidade GetAllByID(int id)
         {
-            OportunidadeBO oportunidade = new OportunidadeBO();
-            return oportunidade.GetList().Where(x => x.ID == id).FirstOrDefault();
+            //OportunidadeBO oportunidade = new OportunidadeBO();
+            //return OportunidadeBO.GetList().Where(x => x.ID == id).FirstOrDefault();
+            throw new NotImplementedException();
         }
 
-        [HttpPost("{idCliente}")]
-        public string Save([FromBody]Oportunidade obj,int idCliente)
+        [HttpPost("{idCliente}/{token}")]
+        public async Task<string> SaveAsync([FromBody]Oportunidade obj, int idCliente, string token)
         {
             OportunidadeBO oportunidade = new OportunidadeBO();
             try
             {
-                oportunidade.Save(obj,idCliente);
+                await OportunidadeBO.SaveAsync(obj, idCliente, token);
                 return "Oportunidade cadastrada com sucesso";
             }
             catch (Exception e)
@@ -50,15 +51,22 @@ namespace StaffProAPI20.Controllers
             }
         }
 
-        [HttpPost]
-        public string Remove([FromBody]Oportunidade obj)
+        [HttpGet("{cep}", Name = "GetEnderecoByCEP")]
+        public async Task<object> GetEnderecoByCEPAsync(string cep)
+        {
+            // Correios
+            return await EnderecoServ.GetEnderecoByCep(cep);
+        }
+
+        [HttpPost("{idCliente}/{token}")]
+        public async Task<string> RemoveAsync([FromBody]Oportunidade obj, int idCliente, string token)
         {
             OportunidadeBO oportunidade = new OportunidadeBO();
             try
             {
                 //Status de remoção
                 obj.Status = 9;
-                oportunidade.Save(obj,0);
+                await OportunidadeBO.SaveAsync(obj, idCliente, token);
                 return "Oportunidade removida com sucesso";
             }
             catch (Exception e)

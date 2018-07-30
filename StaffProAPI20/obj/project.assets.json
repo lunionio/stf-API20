@@ -2918,6 +2918,15 @@
           "lib/netstandard1.0/Remotion.Linq.dll": {}
         }
       },
+      "RestSharp/106.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "type": "package",
         "runtimeTargets": {
@@ -5060,8 +5069,9 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "2.1.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.1",
-          "staffPro.Repository": "1.0.0",
-          "staffpro.entity": "1.0.0"
+          "staffPro.Repositorio": "1.0.0",
+          "staffpro.entidades": "1.0.0",
+          "staffpro.servico": "1.0.0"
         },
         "compile": {
           "bin/placeholder/staffpro.Dominio.dll": {}
@@ -5070,32 +5080,45 @@
           "bin/placeholder/staffpro.Dominio.dll": {}
         }
       },
-      "staffpro.entity/1.0.0": {
+      "staffpro.entidades/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "2.1.1"
         },
         "compile": {
-          "bin/placeholder/staffpro.entity.dll": {}
+          "bin/placeholder/staffpro.entidades.dll": {}
         },
         "runtime": {
-          "bin/placeholder/staffpro.entity.dll": {}
+          "bin/placeholder/staffpro.entidades.dll": {}
         }
       },
-      "staffPro.Repository/1.0.0": {
+      "staffPro.Repositorio/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "2.1.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.1",
-          "staffpro.entity": "1.0.0"
+          "staffpro.entidades": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/staffPro.Repository.dll": {}
+          "bin/placeholder/staffPro.Repositorio.dll": {}
         },
         "runtime": {
-          "bin/placeholder/staffPro.Repository.dll": {}
+          "bin/placeholder/staffPro.Repositorio.dll": {}
+        }
+      },
+      "staffpro.servico/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "RestSharp": "106.3.1"
+        },
+        "compile": {
+          "bin/placeholder/staffpro.servico.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/staffpro.servico.dll": {}
         }
       }
     }
@@ -8259,6 +8282,17 @@
         "lib/portable-net45+win+wpa81+wp80/Remotion.Linq.xml",
         "remotion.linq.2.2.0.nupkg.sha512",
         "remotion.linq.nuspec"
+      ]
+    },
+    "RestSharp/106.3.1": {
+      "sha512": "TmlN7SXjK52zzpQDTuzw7IH3XQ2Svtss/4zvQBKIgf74QIVxvlxoAqQYu1EhNQ1bMSBIQ4aK120BO7W+v8/kiQ==",
+      "type": "package",
+      "path": "restsharp/106.3.1",
+      "files": [
+        "lib/net452/RestSharp.dll",
+        "lib/netstandard2.0/RestSharp.dll",
+        "restsharp.106.3.1.nupkg.sha512",
+        "restsharp.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -11742,7 +11776,7 @@
       ]
     },
     "System.Runtime.Serialization.Formatters/4.3.0": {
-      "sha512": "KT591AkTNFOTbhZlaeMVvfax3RqhH1EJlcwF50Wm7sfnBLuHiOeZRRKrr1ns3NESkM20KPZ5Ol/ueMq5vg4QoQ==",
+      "sha512": "tomPBSLaeU4gqBOB2bs+ibyB4yz2Nm8c3j1DXsQSt6rhAcxR4DhxsgCA6tPW0juAysKDyvXj1d4/gA4FgNYTdQ==",
       "type": "package",
       "path": "system.runtime.serialization.formatters/4.3.0",
       "files": [
@@ -13391,15 +13425,20 @@
       "path": "../staffpro.domain/staffpro.Dominio.csproj",
       "msbuildProject": "../staffpro.domain/staffpro.Dominio.csproj"
     },
-    "staffpro.entity/1.0.0": {
+    "staffpro.entidades/1.0.0": {
       "type": "project",
-      "path": "../staffpro.entidades/staffpro.entity.csproj",
-      "msbuildProject": "../staffpro.entidades/staffpro.entity.csproj"
+      "path": "../staffpro.entidades/staffpro.entidades.csproj",
+      "msbuildProject": "../staffpro.entidades/staffpro.entidades.csproj"
     },
-    "staffPro.Repository/1.0.0": {
+    "staffPro.Repositorio/1.0.0": {
       "type": "project",
-      "path": "../staffPro.repositrio/staffPro.Repository.csproj",
-      "msbuildProject": "../staffPro.repositrio/staffPro.Repository.csproj"
+      "path": "../staffPro.repositrio/staffPro.Repositorio.csproj",
+      "msbuildProject": "../staffPro.repositrio/staffPro.Repositorio.csproj"
+    },
+    "staffpro.servico/1.0.0": {
+      "type": "project",
+      "path": "../staffpro.servico/staffpro.servico.csproj",
+      "msbuildProject": "../staffpro.servico/staffpro.servico.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -13407,9 +13446,11 @@
       "Microsoft.AspNetCore.All >= 2.0.8",
       "Microsoft.NETCore.App >= 2.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.3",
-      "staffPro.Repository >= 1.0.0",
+      "RestSharp >= 106.3.1",
+      "staffPro.Repositorio >= 1.0.0",
       "staffpro.Dominio >= 1.0.0",
-      "staffpro.entity >= 1.0.0"
+      "staffpro.entidades >= 1.0.0",
+      "staffpro.servico >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -13419,11 +13460,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\work\\StaffProAPI20\\StaffProAPI20\\StaffProAPI20.csproj",
+      "projectUniqueName": "C:\\work\\staffproapi20\\StaffProAPI20\\StaffProAPI20.csproj",
       "projectName": "StaffProAPI20",
-      "projectPath": "C:\\work\\StaffProAPI20\\StaffProAPI20\\StaffProAPI20.csproj",
+      "projectPath": "C:\\work\\staffproapi20\\StaffProAPI20\\StaffProAPI20.csproj",
       "packagesPath": "C:\\Users\\Matheus Ferreira\\.nuget\\packages\\",
-      "outputPath": "C:\\work\\StaffProAPI20\\StaffProAPI20\\obj\\",
+      "outputPath": "C:\\work\\staffproapi20\\StaffProAPI20\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13442,14 +13483,17 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\work\\StaffProAPI20\\staffpro.domain\\staffpro.Dominio.csproj": {
-              "projectPath": "C:\\work\\StaffProAPI20\\staffpro.domain\\staffpro.Dominio.csproj"
+            "C:\\work\\staffproapi20\\staffpro.domain\\staffpro.Dominio.csproj": {
+              "projectPath": "C:\\work\\staffproapi20\\staffpro.domain\\staffpro.Dominio.csproj"
             },
-            "C:\\work\\StaffProAPI20\\staffpro.entidades\\staffpro.entity.csproj": {
-              "projectPath": "C:\\work\\StaffProAPI20\\staffpro.entidades\\staffpro.entity.csproj"
+            "C:\\work\\staffproapi20\\staffpro.entidades\\staffpro.entidades.csproj": {
+              "projectPath": "C:\\work\\staffproapi20\\staffpro.entidades\\staffpro.entidades.csproj"
             },
-            "C:\\work\\StaffProAPI20\\staffPro.repositrio\\staffPro.Repository.csproj": {
-              "projectPath": "C:\\work\\StaffProAPI20\\staffPro.repositrio\\staffPro.Repository.csproj"
+            "C:\\work\\staffproapi20\\staffPro.repositrio\\staffPro.Repositorio.csproj": {
+              "projectPath": "C:\\work\\staffproapi20\\staffPro.repositrio\\staffPro.Repositorio.csproj"
+            },
+            "C:\\work\\staffproapi20\\staffpro.servico\\staffpro.servico.csproj": {
+              "projectPath": "C:\\work\\staffproapi20\\staffpro.servico\\staffpro.servico.csproj"
             }
           }
         }
@@ -13475,6 +13519,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[2.0.3, )"
+          },
+          "RestSharp": {
+            "target": "Package",
+            "version": "[106.3.1, )"
           }
         },
         "imports": [

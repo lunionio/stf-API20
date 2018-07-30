@@ -20,6 +20,7 @@ namespace StaffProAPI20
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
+                .UseUrls("http://187.84.229.35:5600")
                 .Build();
     }
 }

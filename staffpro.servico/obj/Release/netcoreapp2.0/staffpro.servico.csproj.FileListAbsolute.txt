@@ -1,0 +1,12 @@
+C:\work\staffproapi20\staffpro.servico\bin\Release\netcoreapp2.0\staffpro.servico.deps.json
+C:\work\staffproapi20\staffpro.servico\bin\Release\netcoreapp2.0\staffpro.servico.dll
+C:\work\staffproapi20\staffpro.servico\bin\Release\netcoreapp2.0\staffpro.servico.pdb
+C:\work\staffproapi20\staffpro.servico\bin\Release\netcoreapp2.0\Newtonsoft.Json.dll
+C:\work\staffproapi20\staffpro.servico\bin\Release\netcoreapp2.0\Newtonsoft.Json.xml
+C:\work\staffproapi20\staffpro.servico\obj\Release\netcoreapp2.0\staffpro.servico.csprojAssemblyReference.cache
+C:\work\staffproapi20\staffpro.servico\obj\Release\netcoreapp2.0\staffpro.servico.csproj.CoreCompileInputs.cache
+C:\work\staffproapi20\staffpro.servico\obj\Release\netcoreapp2.0\staffpro.servico.AssemblyInfoInputs.cache
+C:\work\staffproapi20\staffpro.servico\obj\Release\netcoreapp2.0\staffpro.servico.AssemblyInfo.cs
+C:\work\staffproapi20\staffpro.servico\obj\Release\netcoreapp2.0\staffpro.servico.csproj.CopyComplete
+C:\work\staffproapi20\staffpro.servico\obj\Release\netcoreapp2.0\staffpro.servico.dll
+C:\work\staffproapi20\staffpro.servico\obj\Release\netcoreapp2.0\staffpro.servico.pdb

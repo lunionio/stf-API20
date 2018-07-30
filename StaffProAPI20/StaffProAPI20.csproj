@@ -11,6 +11,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.8" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.3" />
+    <PackageReference Include="RestSharp" Version="106.3.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -19,8 +20,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\staffpro.domain\staffpro.Dominio.csproj" />
-    <ProjectReference Include="..\staffpro.entidades\staffpro.entity.csproj" />
-    <ProjectReference Include="..\staffPro.repositrio\staffPro.Repository.csproj" />
+    <ProjectReference Include="..\staffpro.entidades\staffpro.entidades.csproj" />
+    <ProjectReference Include="..\staffPro.repositrio\staffPro.Repositorio.csproj" />
+    <ProjectReference Include="..\staffpro.servico\staffpro.servico.csproj" />
   </ItemGroup>
 
 </Project>

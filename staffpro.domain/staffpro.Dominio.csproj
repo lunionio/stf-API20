@@ -10,8 +10,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\staffpro.entidades\staffpro.entity.csproj" />
-    <ProjectReference Include="..\staffPro.repositrio\staffPro.Repository.csproj" />
+    <ProjectReference Include="..\staffpro.entidades\staffpro.entidades.csproj" />
+    <ProjectReference Include="..\staffPro.repositrio\staffPro.Repositorio.csproj" />
+    <ProjectReference Include="..\staffpro.servico\staffpro.servico.csproj" />
   </ItemGroup>
 
 </Project>

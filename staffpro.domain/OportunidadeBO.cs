@@ -1,4 +1,5 @@
 ﻿using staffpro.entity;
+using staffpro.servico;
 using staffPro.repository;
 using System;
 using System.Collections.Generic;
@@ -9,61 +10,103 @@ namespace staffpro.Domain
 {
     public class OportunidadeBO
     {
-        public bool Save(Oportunidade oportunidade, int idCliente)
+        public static async Task<bool> SaveAsync(Oportunidade oportunidade, int idCliente, string token)
         {
-            if (oportunidade.ID == 0)
+            if (await SeguracaServ.validaTokenAsync(token))
             {
-                OportunidadeRep rep = new OportunidadeRep();
-                oportunidade.DataCriacao = DateTime.Now;
-                oportunidade.DataEdicao = DateTime.Now;
-                oportunidade.Ativo = true;
-                try
+                if (oportunidade.ID == 0)
                 {
-                    rep.Add(oportunidade);
-                    rep.AddClient(oportunidade, idCliente);
-                    return true;
+                    OportunidadeRep rep = new OportunidadeRep();
+                    oportunidade.DataCriacao = DateTime.Now;
+                    oportunidade.DataEdicao = DateTime.Now;
+                    oportunidade.Ativo = true;
+                    try
+                    {
+                        rep.Add(oportunidade);
+                        return true;
+                    }
+                    catch (Exception e)
+                    {
+                        ///:)
+                        return false;
+                    }
                 }
-                catch (Exception e)
+                else
                 {
-                    ///:)
-                    return false;
+                    OportunidadeRep rep = new OportunidadeRep();
+                    oportunidade.DataEdicao = DateTime.Now;
+                    try
+                    {
+                        rep.Update(oportunidade);
+                        return true;
+                    }
+                    catch (Exception e)
+                    {
+                        ///:)
+                        return false;
+                    }
                 }
             }
             else
             {
+                return false;
+            }
+
+        }
+        public static async Task<IList<Oportunidade>> GetListAsync(int idCliente, string token)
+        {
+
+            if (await SeguracaServ.validaTokenAsync(token))
+            {
                 OportunidadeRep rep = new OportunidadeRep();
-                oportunidade.DataEdicao = DateTime.Now;
+                //9 é deletado
+                return rep.GetAll().Where(x => x.Status != 9 && x.IdCliente == idCliente).ToList();
+            }
+            else
+            {
+                return null;
+            }
+
+        }
+        public static async Task<bool> RemoveAsync(Oportunidade oportunidade, string token)
+        {
+            if (await SeguracaServ.validaTokenAsync(token))
+            {
                 try
                 {
+                    oportunidade.Status = 9;
+                    OportunidadeRep rep = new OportunidadeRep();
                     rep.Update(oportunidade);
                     return true;
                 }
                 catch (Exception e)
                 {
-                    ///:)
                     return false;
                 }
             }
-        }
-        public IList<Oportunidade> GetList()
-        {
-            OportunidadeRep rep = new OportunidadeRep();
-            //9 é deletado
-            return rep.GetAll().Where(x => x.Status != 9).ToList();
-        }
-        public bool Remove(Oportunidade oportunidade)
-        {
-            oportunidade.Status = 9;
-            Save(oportunidade,0);
-            throw new NotImplementedException();
-        }
-        public async Task<IList<Oportunidade>> GetListByClienteAsync(int idCliente)
-        {
-
-            OportunidadeRep oportunidade = new OportunidadeRep();
-            return await oportunidade.GetAllByClientAsync(idCliente);
+            else
+            {
+                return false;
+            }
 
         }
+        public static async Task<List<Oportunidade>> GetListByClienteAsync(int idUsuarioCriacao, int idCliente, string token)
+        {
+            if (await SeguracaServ.validaTokenAsync(token))
+            {
+                OportunidadeRep oportunidade = new OportunidadeRep();
+                IList<Oportunidade> list = oportunidade.GetAll().Where(x =>
+                x.UsuarioCriacao == idUsuarioCriacao &&
+                x.IdCliente == idCliente).ToList();
 
+                return list.OrderBy(x => x.DataOportunidade).ToList();
+            }
+            else
+            {
+                return null;
+            }
+           
+
+        }
     }
 }
