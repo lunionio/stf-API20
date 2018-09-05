@@ -4,12 +4,8 @@ C:\work\staffproapi20\StaffProAPI20\bin\Release\netcoreapp2.0\StaffProAPI20.runt
 C:\work\staffproapi20\StaffProAPI20\bin\Release\netcoreapp2.0\StaffProAPI20.dll
 C:\work\staffproapi20\StaffProAPI20\bin\Release\netcoreapp2.0\StaffProAPI20.pdb
 C:\work\staffproapi20\StaffProAPI20\bin\Release\netcoreapp2.0\staffpro.Dominio.dll
-C:\work\staffproapi20\StaffProAPI20\bin\Release\netcoreapp2.0\staffpro.entity.dll
-C:\work\staffproapi20\StaffProAPI20\bin\Release\netcoreapp2.0\staffPro.Repository.dll
 C:\work\staffproapi20\StaffProAPI20\bin\Release\netcoreapp2.0\staffpro.servico.dll
 C:\work\staffproapi20\StaffProAPI20\bin\Release\netcoreapp2.0\staffpro.Dominio.pdb
-C:\work\staffproapi20\StaffProAPI20\bin\Release\netcoreapp2.0\staffpro.entity.pdb
-C:\work\staffproapi20\StaffProAPI20\bin\Release\netcoreapp2.0\staffPro.Repository.pdb
 C:\work\staffproapi20\StaffProAPI20\bin\Release\netcoreapp2.0\staffpro.servico.pdb
 C:\work\staffproapi20\StaffProAPI20\obj\Release\netcoreapp2.0\StaffProAPI20.csprojAssemblyReference.cache
 C:\work\staffproapi20\StaffProAPI20\obj\Release\netcoreapp2.0\StaffProAPI20.csproj.CoreCompileInputs.cache
@@ -18,3 +14,7 @@ C:\work\staffproapi20\StaffProAPI20\obj\Release\netcoreapp2.0\StaffProAPI20.Asse
 C:\work\staffproapi20\StaffProAPI20\obj\Release\netcoreapp2.0\StaffProAPI20.csproj.CopyComplete
 C:\work\staffproapi20\StaffProAPI20\obj\Release\netcoreapp2.0\StaffProAPI20.dll
 C:\work\staffproapi20\StaffProAPI20\obj\Release\netcoreapp2.0\StaffProAPI20.pdb
+C:\work\staffproapi20\StaffProAPI20\bin\Release\netcoreapp2.0\staffpro.entidades.dll
+C:\work\staffproapi20\StaffProAPI20\bin\Release\netcoreapp2.0\staffPro.Repositorio.dll
+C:\work\staffproapi20\StaffProAPI20\bin\Release\netcoreapp2.0\staffpro.entidades.pdb
+C:\work\staffproapi20\StaffProAPI20\bin\Release\netcoreapp2.0\staffPro.Repositorio.pdb

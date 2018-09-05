@@ -5069,8 +5069,9 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "2.1.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.1",
-          "staffPro.Repository": "1.0.0",
-          "staffpro.entity": "1.0.0"
+          "staffPro.Repositorio": "1.0.0",
+          "staffpro.entidades": "1.0.0",
+          "staffpro.servico": "1.0.0"
         },
         "compile": {
           "bin/placeholder/staffpro.Dominio.dll": {}
@@ -5079,32 +5080,32 @@
           "bin/placeholder/staffpro.Dominio.dll": {}
         }
       },
-      "staffpro.entity/1.0.0": {
+      "staffpro.entidades/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "2.1.1"
         },
         "compile": {
-          "bin/placeholder/staffpro.entity.dll": {}
+          "bin/placeholder/staffpro.entidades.dll": {}
         },
         "runtime": {
-          "bin/placeholder/staffpro.entity.dll": {}
+          "bin/placeholder/staffpro.entidades.dll": {}
         }
       },
-      "staffPro.Repository/1.0.0": {
+      "staffPro.Repositorio/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "2.1.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.1",
-          "staffpro.entity": "1.0.0"
+          "staffpro.entidades": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/staffPro.Repository.dll": {}
+          "bin/placeholder/staffPro.Repositorio.dll": {}
         },
         "runtime": {
-          "bin/placeholder/staffPro.Repository.dll": {}
+          "bin/placeholder/staffPro.Repositorio.dll": {}
         }
       },
       "staffpro.servico/1.0.0": {
@@ -10498,8 +10499,9 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "2.1.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.1",
-          "staffPro.Repository": "1.0.0",
-          "staffpro.entity": "1.0.0"
+          "staffPro.Repositorio": "1.0.0",
+          "staffpro.entidades": "1.0.0",
+          "staffpro.servico": "1.0.0"
         },
         "compile": {
           "bin/placeholder/staffpro.Dominio.dll": {}
@@ -10508,32 +10510,32 @@
           "bin/placeholder/staffpro.Dominio.dll": {}
         }
       },
-      "staffpro.entity/1.0.0": {
+      "staffpro.entidades/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "2.1.1"
         },
         "compile": {
-          "bin/placeholder/staffpro.entity.dll": {}
+          "bin/placeholder/staffpro.entidades.dll": {}
         },
         "runtime": {
-          "bin/placeholder/staffpro.entity.dll": {}
+          "bin/placeholder/staffpro.entidades.dll": {}
         }
       },
-      "staffPro.Repository/1.0.0": {
+      "staffPro.Repositorio/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "2.1.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.1",
-          "staffpro.entity": "1.0.0"
+          "staffpro.entidades": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/staffPro.Repository.dll": {}
+          "bin/placeholder/staffPro.Repositorio.dll": {}
         },
         "runtime": {
-          "bin/placeholder/staffPro.Repository.dll": {}
+          "bin/placeholder/staffPro.Repositorio.dll": {}
         }
       },
       "staffpro.servico/1.0.0": {
@@ -18004,7 +18006,7 @@
       ]
     },
     "System.Runtime.Serialization.Formatters/4.3.0": {
-      "sha512": "KT591AkTNFOTbhZlaeMVvfax3RqhH1EJlcwF50Wm7sfnBLuHiOeZRRKrr1ns3NESkM20KPZ5Ol/ueMq5vg4QoQ==",
+      "sha512": "tomPBSLaeU4gqBOB2bs+ibyB4yz2Nm8c3j1DXsQSt6rhAcxR4DhxsgCA6tPW0juAysKDyvXj1d4/gA4FgNYTdQ==",
       "type": "package",
       "path": "system.runtime.serialization.formatters/4.3.0",
       "files": [
@@ -19681,15 +19683,15 @@
       "path": "../staffpro.domain/staffpro.Dominio.csproj",
       "msbuildProject": "../staffpro.domain/staffpro.Dominio.csproj"
     },
-    "staffpro.entity/1.0.0": {
+    "staffpro.entidades/1.0.0": {
       "type": "project",
-      "path": "../staffpro.entidades/staffpro.entity.csproj",
-      "msbuildProject": "../staffpro.entidades/staffpro.entity.csproj"
+      "path": "../staffpro.entidades/staffpro.entidades.csproj",
+      "msbuildProject": "../staffpro.entidades/staffpro.entidades.csproj"
     },
-    "staffPro.Repository/1.0.0": {
+    "staffPro.Repositorio/1.0.0": {
       "type": "project",
-      "path": "../staffPro.repositrio/staffPro.Repository.csproj",
-      "msbuildProject": "../staffPro.repositrio/staffPro.Repository.csproj"
+      "path": "../staffPro.repositrio/staffPro.Repositorio.csproj",
+      "msbuildProject": "../staffPro.repositrio/staffPro.Repositorio.csproj"
     },
     "staffpro.servico/1.0.0": {
       "type": "project",
@@ -19703,9 +19705,9 @@
       "Microsoft.NETCore.App >= 2.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.3",
       "RestSharp >= 106.3.1",
-      "staffPro.Repository >= 1.0.0",
+      "staffPro.Repositorio >= 1.0.0",
       "staffpro.Dominio >= 1.0.0",
-      "staffpro.entity >= 1.0.0",
+      "staffpro.entidades >= 1.0.0",
       "staffpro.servico >= 1.0.0"
     ]
   },
@@ -19742,11 +19744,11 @@
             "C:\\work\\staffproapi20\\staffpro.domain\\staffpro.Dominio.csproj": {
               "projectPath": "C:\\work\\staffproapi20\\staffpro.domain\\staffpro.Dominio.csproj"
             },
-            "C:\\work\\staffproapi20\\staffpro.entidades\\staffpro.entity.csproj": {
-              "projectPath": "C:\\work\\staffproapi20\\staffpro.entidades\\staffpro.entity.csproj"
+            "C:\\work\\staffproapi20\\staffpro.entidades\\staffpro.entidades.csproj": {
+              "projectPath": "C:\\work\\staffproapi20\\staffpro.entidades\\staffpro.entidades.csproj"
             },
-            "C:\\work\\staffproapi20\\staffPro.repositrio\\staffPro.Repository.csproj": {
-              "projectPath": "C:\\work\\staffproapi20\\staffPro.repositrio\\staffPro.Repository.csproj"
+            "C:\\work\\staffproapi20\\staffPro.repositrio\\staffPro.Repositorio.csproj": {
+              "projectPath": "C:\\work\\staffproapi20\\staffPro.repositrio\\staffPro.Repositorio.csproj"
             },
             "C:\\work\\staffproapi20\\staffpro.servico\\staffpro.servico.csproj": {
               "projectPath": "C:\\work\\staffproapi20\\staffpro.servico\\staffpro.servico.csproj"

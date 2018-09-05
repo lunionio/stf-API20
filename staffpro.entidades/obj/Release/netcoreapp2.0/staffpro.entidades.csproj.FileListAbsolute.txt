@@ -1,0 +1,9 @@
+C:\work\staffproapi20\staffpro.entidades\bin\Release\netcoreapp2.0\staffpro.entidades.deps.json
+C:\work\staffproapi20\staffpro.entidades\bin\Release\netcoreapp2.0\staffpro.entidades.dll
+C:\work\staffproapi20\staffpro.entidades\bin\Release\netcoreapp2.0\staffpro.entidades.pdb
+C:\work\staffproapi20\staffpro.entidades\obj\Release\netcoreapp2.0\staffpro.entidades.csproj.CoreCompileInputs.cache
+C:\work\staffproapi20\staffpro.entidades\obj\Release\netcoreapp2.0\staffpro.entidades.AssemblyInfoInputs.cache
+C:\work\staffproapi20\staffpro.entidades\obj\Release\netcoreapp2.0\staffpro.entidades.AssemblyInfo.cs
+C:\work\staffproapi20\staffpro.entidades\obj\Release\netcoreapp2.0\staffpro.entidades.dll
+C:\work\staffproapi20\staffpro.entidades\obj\Release\netcoreapp2.0\staffpro.entidades.pdb
+C:\work\staffproapi20\staffpro.entidades\obj\Release\netcoreapp2.0\staffpro.entidades.csprojAssemblyReference.cache

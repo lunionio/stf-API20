@@ -27,9 +27,9 @@
           "Microsoft.NETCore.App": "2.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.3",
           "RestSharp": "106.3.1",
-          "staffPro.Repository": "1.0.0",
+          "staffPro.Repositorio": "1.0.0",
           "staffpro.Dominio": "1.0.0",
-          "staffpro.entity": "1.0.0",
+          "staffpro.entidades": "1.0.0",
           "staffpro.servico": "1.0.0"
         },
         "runtime": {
@@ -4114,8 +4114,9 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "2.1.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.1",
-          "staffPro.Repository": "1.0.0",
-          "staffpro.entity": "1.0.0"
+          "staffPro.Repositorio": "1.0.0",
+          "staffpro.entidades": "1.0.0",
+          "staffpro.servico": "1.0.0"
         },
         "runtime": {
           "staffpro.Dominio.dll": {}
@@ -4124,28 +4125,28 @@
           "staffpro.Dominio.dll": {}
         }
       },
-      "staffpro.entity/1.0.0": {
+      "staffpro.entidades/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "2.1.1"
         },
         "runtime": {
-          "staffpro.entity.dll": {}
+          "staffpro.entidades.dll": {}
         },
         "compile": {
-          "staffpro.entity.dll": {}
+          "staffpro.entidades.dll": {}
         }
       },
-      "staffPro.Repository/1.0.0": {
+      "staffPro.Repositorio/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "2.1.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.1",
-          "staffpro.entity": "1.0.0"
+          "staffpro.entidades": "1.0.0"
         },
         "runtime": {
-          "staffPro.Repository.dll": {}
+          "staffPro.Repositorio.dll": {}
         },
         "compile": {
-          "staffPro.Repository.dll": {}
+          "staffPro.Repositorio.dll": {}
         }
       },
       "staffpro.servico/1.0.0": {
@@ -6248,7 +6249,7 @@
     "System.Runtime.Serialization.Formatters/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-KT591AkTNFOTbhZlaeMVvfax3RqhH1EJlcwF50Wm7sfnBLuHiOeZRRKrr1ns3NESkM20KPZ5Ol/ueMq5vg4QoQ==",
+      "sha512": "sha512-tomPBSLaeU4gqBOB2bs+ibyB4yz2Nm8c3j1DXsQSt6rhAcxR4DhxsgCA6tPW0juAysKDyvXj1d4/gA4FgNYTdQ==",
       "path": "system.runtime.serialization.formatters/4.3.0",
       "hashPath": "system.runtime.serialization.formatters.4.3.0.nupkg.sha512"
     },
@@ -6502,12 +6503,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "staffpro.entity/1.0.0": {
+    "staffpro.entidades/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "staffPro.Repository/1.0.0": {
+    "staffPro.Repositorio/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
