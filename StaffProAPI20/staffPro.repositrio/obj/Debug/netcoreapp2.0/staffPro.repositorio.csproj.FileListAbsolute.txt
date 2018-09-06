@@ -1,0 +1,17 @@
+C:\work\StaffProAPI20\staffPro.repositrio\bin\Debug\netcoreapp2.0\staffpro.entidades.dll
+C:\work\StaffProAPI20\staffPro.repositrio\obj\Debug\netcoreapp2.0\staffPro.repositorio.csprojAssemblyReference.cache
+C:\work\StaffProAPI20\staffPro.repositrio\obj\Debug\netcoreapp2.0\staffPro.repositorio.csproj.CoreCompileInputs.cache
+C:\work\StaffProAPI20\staffPro.repositrio\obj\Debug\netcoreapp2.0\staffPro.repositorio.AssemblyInfoInputs.cache
+C:\work\StaffProAPI20\staffPro.repositrio\obj\Debug\netcoreapp2.0\staffPro.repositorio.AssemblyInfo.cs
+C:\Users\Dev01\Documents\Visual Studio 2017\Projects\StaffProAPI20\staffPro.repositrio\bin\Debug\netcoreapp2.0\staffPro.Repositorio.deps.json
+C:\Users\Dev01\Documents\Visual Studio 2017\Projects\StaffProAPI20\staffPro.repositrio\bin\Debug\netcoreapp2.0\staffPro.Repositorio.dll
+C:\Users\Dev01\Documents\Visual Studio 2017\Projects\StaffProAPI20\staffPro.repositrio\bin\Debug\netcoreapp2.0\staffPro.Repositorio.pdb
+C:\Users\Dev01\Documents\Visual Studio 2017\Projects\StaffProAPI20\staffPro.repositrio\bin\Debug\netcoreapp2.0\staffpro.entidades.dll
+C:\Users\Dev01\Documents\Visual Studio 2017\Projects\StaffProAPI20\staffPro.repositrio\bin\Debug\netcoreapp2.0\staffpro.entidades.pdb
+C:\Users\Dev01\Documents\Visual Studio 2017\Projects\StaffProAPI20\staffPro.repositrio\obj\Debug\netcoreapp2.0\staffPro.Repositorio.csprojAssemblyReference.cache
+C:\Users\Dev01\Documents\Visual Studio 2017\Projects\StaffProAPI20\staffPro.repositrio\obj\Debug\netcoreapp2.0\staffPro.Repositorio.csproj.CoreCompileInputs.cache
+C:\Users\Dev01\Documents\Visual Studio 2017\Projects\StaffProAPI20\staffPro.repositrio\obj\Debug\netcoreapp2.0\staffPro.Repositorio.AssemblyInfoInputs.cache
+C:\Users\Dev01\Documents\Visual Studio 2017\Projects\StaffProAPI20\staffPro.repositrio\obj\Debug\netcoreapp2.0\staffPro.Repositorio.AssemblyInfo.cs
+C:\Users\Dev01\Documents\Visual Studio 2017\Projects\StaffProAPI20\staffPro.repositrio\obj\Debug\netcoreapp2.0\staffPro.Repositorio.csproj.CopyComplete
+C:\Users\Dev01\Documents\Visual Studio 2017\Projects\StaffProAPI20\staffPro.repositrio\obj\Debug\netcoreapp2.0\staffPro.Repositorio.dll
+C:\Users\Dev01\Documents\Visual Studio 2017\Projects\StaffProAPI20\staffPro.repositrio\obj\Debug\netcoreapp2.0\staffPro.Repositorio.pdb
